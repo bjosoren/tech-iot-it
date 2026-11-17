@@ -15,7 +15,6 @@ All scripts are tried and tested in real environments. They are published here a
 | Script | Description | Blog post |
 |--------|-------------|-----------|
 | [Get-DEMShareReport](omnissa/dem/Get-DEMShareReport/) | Generates a styled HTML documentation report for Omnissa DEM file shares — SMB permissions, NTFS ACLs, folder ownership and subfolder structure | [tech.iot-it.no](https://tech.iot-it.no) |
-| [New-UagCsr](omnissa/uag/New-UagCsr/) | Connects to Omnissa Unified Access Gateway over SSH (no PowerCLI) and generates a private key and CSR for certificate renewal | [tech.iot-it.no](https://tech.iot-it.no/vmware/vmware-unified-access-gateway/vmware-unified-access-gateway-generate-csr/) |
 
 ---
 
@@ -26,8 +25,6 @@ tech-iot-it/
 ├── omnissa/
 │   ├── dem/
 │   │   └── Get-DEMShareReport/
-│   ├── uag/
-│   │   └── New-UagCsr/
 │   ├── appvolumes/
 │   └── horizon/
 ├── microsoft/
