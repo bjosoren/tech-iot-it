@@ -17,6 +17,12 @@ All scripts are tried and tested in real environments. They are published here a
 | [Get-TopFolders](microsoft/windows/scripts/Get-TopFolders/) | Lists the largest folders on a drive and lets you drill down interactively. One fast scan, then instant navigation | – |
 | [New-IsoFromFolder](microsoft/windows/scripts/New-IsoFromFolder/) | Packages a folder into an ISO file (ISO9660 + Joliet + UDF) with the IMAPI2 engine built into Windows. No ADK or extra tools | – |
 
+### VMware vSphere
+
+| Script | Description | Blog post |
+|--------|-------------|-----------|
+| [Send-FileToDatastore](vmware/vsphere/scripts/Send-FileToDatastore/) | Uploads a file (e.g. an ISO) to a datastore through vCenter's HTTPS file interface with the built-in curl.exe. No PowerCLI | – |
+
 ### Omnissa
 
 Omnissa scripts (Horizon, App Volumes, DEM, UAG) are published in their own repository, [bjosoren/omnissa](https://github.com/bjosoren/omnissa), under `operations/<product>/scripts/`. For example:
@@ -37,6 +43,9 @@ tech-iot-it/
 │           ├── Get-TopFolders/
 │           └── New-IsoFromFolder/
 ├── vmware/
+│   └── vsphere/
+│       └── scripts/
+│           └── Send-FileToDatastore/
 └── linux/
 ```
 
