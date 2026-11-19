@@ -15,6 +15,7 @@ All scripts are tried and tested in real environments. They are published here a
 | Script | Description | Blog post |
 |--------|-------------|-----------|
 | [Get-TopFolders](microsoft/windows/scripts/Get-TopFolders/) | Lists the largest folders on a drive and lets you drill down interactively. One fast scan, then instant navigation | – |
+| [New-IsoFromFolder](microsoft/windows/scripts/New-IsoFromFolder/) | Packages a folder into an ISO file (ISO9660 + Joliet + UDF) with the IMAPI2 engine built into Windows. No ADK or extra tools | – |
 
 ### Omnissa
 
@@ -33,7 +34,8 @@ tech-iot-it/
 ├── microsoft/
 │   └── windows/
 │       └── scripts/
-│           └── Get-TopFolders/
+│           ├── Get-TopFolders/
+│           └── New-IsoFromFolder/
 ├── vmware/
 └── linux/
 ```
