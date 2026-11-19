@@ -10,6 +10,12 @@ All scripts are tried and tested in real environments. They are published here a
 
 ## Contents
 
+### Windows
+
+| Script | Description | Blog post |
+|--------|-------------|-----------|
+| [Get-TopFolders](microsoft/windows/scripts/Get-TopFolders/) | Lists the largest folders on a drive and lets you drill down interactively. One fast scan, then instant navigation | – |
+
 ### Omnissa
 
 Omnissa scripts (Horizon, App Volumes, DEM, UAG) are published in their own repository, [bjosoren/omnissa](https://github.com/bjosoren/omnissa), under `operations/<product>/scripts/`. For example:
@@ -25,6 +31,9 @@ Omnissa scripts (Horizon, App Volumes, DEM, UAG) are published in their own repo
 ```
 tech-iot-it/
 ├── microsoft/
+│   └── windows/
+│       └── scripts/
+│           └── Get-TopFolders/
 ├── vmware/
 └── linux/
 ```
