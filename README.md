@@ -12,9 +12,11 @@ All scripts are tried and tested in real environments. They are published here a
 
 ### Omnissa
 
-| Script | Description | Blog post |
-|--------|-------------|-----------|
-| [Get-DEMShareReport](omnissa/dem/Get-DEMShareReport/) | Generates a styled HTML documentation report for Omnissa DEM file shares — SMB permissions, NTFS ACLs, folder ownership and subfolder structure | [tech.iot-it.no](https://tech.iot-it.no) |
+Omnissa scripts (Horizon, App Volumes, DEM, UAG) are published in their own repository, [bjosoren/omnissa](https://github.com/bjosoren/omnissa), under `operations/<product>/scripts/`. For example:
+
+| Script | Location |
+|--------|----------|
+| Get-DEMShareReport | [omnissa/operations/dem/scripts/Get-DEMShareReport](https://github.com/bjosoren/omnissa/tree/main/operations/dem/scripts/Get-DEMShareReport) |
 
 ---
 
@@ -22,11 +24,6 @@ All scripts are tried and tested in real environments. They are published here a
 
 ```
 tech-iot-it/
-├── omnissa/
-│   ├── dem/
-│   │   └── Get-DEMShareReport/
-│   ├── appvolumes/
-│   └── horizon/
 ├── microsoft/
 ├── vmware/
 └── linux/
