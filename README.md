@@ -23,6 +23,16 @@ All scripts are tried and tested in real environments. They are published here a
 |--------|-------------|-----------|
 | [Send-FileToDatastore](vmware/vsphere/scripts/Send-FileToDatastore/) | Uploads a file (e.g. an ISO) to a datastore through vCenter's HTTPS file interface with the built-in curl.exe. No PowerCLI | – |
 
+### Dell Pro Max with GB10 (NVIDIA DGX OS)
+
+| Script | Description | Blog post |
+|--------|-------------|-----------|
+| [gb10-inventory](dell/pro-max-gb10/scripts/gb10-inventory/) | Read-only inventory of a GB10 / DGX OS box: versions, updates, Docker, inference stacks, models, ports, services, users and shell history in one report | [Local AI log analyzer](https://tech.iot-it.no/misc/dell-pro-max-gb10-local-ai-log-analysis/) |
+| [gb10-adjoin](dell/pro-max-gb10/scripts/gb10-adjoin/) | Joins the box to Active Directory with realmd/SSSD, restricts logins to AD groups and grants sudo to an AD group. Parameters at the top, safe to re-run | [Local AI log analyzer](https://tech.iot-it.no/misc/dell-pro-max-gb10-local-ai-log-analysis/) |
+| [gb10-prepare](dell/pro-max-gb10/scripts/gb10-prepare/) | Shared `/srv/ai` structure for a local AI stack: dedicated group, default ACLs, shared Hugging Face cache and a secrets template | [Local AI log analyzer](https://tech.iot-it.no/misc/dell-pro-max-gb10-local-ai-log-analysis/) |
+| [gb10-stack](dell/pro-max-gb10/scripts/gb10-stack/) | Deploys vLLM (NVIDIA NGC container) and LiteLLM with Docker Compose as a local, OpenAI-compatible endpoint for log analysis, with a JSON-schema smoke test | [Local AI log analyzer](https://tech.iot-it.no/misc/dell-pro-max-gb10-local-ai-log-analysis/) |
+| [gb10-syslog](dell/pro-max-gb10/scripts/gb10-syslog/) | Makes the box a syslog receiver (rsyslog, UDP/TCP 5514) for Horizon Connection Server events, one file per sender per day, with config validation, AppArmor override and retention | [Local AI log analyzer](https://tech.iot-it.no/misc/dell-pro-max-gb10-local-ai-log-analysis/) |
+
 ### Omnissa
 
 Omnissa scripts (Horizon, App Volumes, DEM, UAG) are published in their own repository, [bjosoren/omnissa](https://github.com/bjosoren/omnissa), under `operations/<product>/scripts/`. For example:
@@ -46,6 +56,14 @@ tech-iot-it/
 │   └── vsphere/
 │       └── scripts/
 │           └── Send-FileToDatastore/
+├── dell/
+│   └── pro-max-gb10/
+│       └── scripts/
+│           ├── gb10-inventory/
+│           ├── gb10-adjoin/
+│           ├── gb10-prepare/
+│           ├── gb10-stack/
+│           └── gb10-syslog/
 └── linux/
 ```
 
