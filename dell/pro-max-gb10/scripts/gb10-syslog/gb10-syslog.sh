@@ -17,7 +17,7 @@ PORT=5514
 LOG_ROOT="/srv/ai/logs/syslog"
 AI_GROUP="aiops"
 RETENTION_DAYS=90
-ALLOWED_SENDERS=""            # optional, e.g. "172.16.11.0/24" - empty = accept from anyone that can reach the port
+ALLOWED_SENDERS=""            # optional, e.g. "10.0.0.0/24" - empty = accept from anyone that can reach the port
 # =============================================================================
 
 MODE="${1:-run}"
